@@ -14,6 +14,6 @@ jobs:
       - name: echo random number 
         run: | 
           echo random-number ${{ steps.foo.outputs.random-number }}
-          echo "$GITHUB_OUTPUT"
+          echo "github output"
           echo $GITHUB_OUTPUT
         shell: bash
