@@ -12,5 +12,7 @@ jobs:
         with:
           who-to-greet: 'Mona the Octocat'
       - name: echo random number 
-        run: echo random-number ${{ steps.foo.outputs.random-number }}
+        run: | 
+          echo random-number ${{ steps.foo.outputs.random-number }}
+          echo $GITHUB_OUTPUT
         shell: bash
