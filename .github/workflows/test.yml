@@ -5,5 +5,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
         - uses: actions/checkout@v3
-        - uses: pvmtriet232/hello-world-composite-action@v1
-        - run: echo random-number
+
+        - id: thisStep
+          uses: pvmtriet232/hello-world-composite-action@v1
+          with:
+            who-to-greet: "Pham Van Minh Triet"
+        - run: echo random-number ${{steps.thisStep.outputs.random-number}}
