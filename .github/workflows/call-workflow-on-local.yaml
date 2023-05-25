@@ -2,4 +2,5 @@ on:
     workflow_dispatch:
 jobs:
     calling-workflow-in-the-same-repo:
-        uses: ./.github/workflows/reusable-workflows.yaml
+        # uses: ./.github/workflows/reusable-workflows.yaml
+        uses: pvmtriet232/github-action/.github/workflows/reusable-workflows.yaml@main
