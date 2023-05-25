@@ -1,0 +1,5 @@
+on:
+    workflow_dispatch:
+jobs:
+    calling-workflow-in-the-same-repo:
+        uses: ./.github/workflows/reusable-workflows.yaml@main
