@@ -14,7 +14,7 @@
           with:
             submodules: recursive
         - name: Run link check
-          uses: pvmtriet232/github-action-markdown-link-check@v1
+          uses: pvmtriet232/github-action-markdown-link-check@master
           with:
             use-quiet-mode: 'no'
             use-verbose-mode: 'yes'
