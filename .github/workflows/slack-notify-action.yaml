@@ -1,0 +1,11 @@
+on:
+  push
+jobs:
+  slack-notify:
+    name: Simple notification
+    runs-on: ubuntu-latest
+    steps:
+      - name: slack-notify
+        uses: pvmtriet232/simple-slack-notify@master
+        with:
+          text: 'This is the simplest notification'
