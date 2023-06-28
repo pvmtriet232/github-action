@@ -1,4 +1,4 @@
-name: Example Workflow
+name: github-context-printing value
 
 on: workflow_dispatch
 
@@ -9,4 +9,7 @@ jobs:
     steps:
       - name: Display GitHub repository
         run: echo "Repository ${{github.repository}}"
+      - name: Display GitHub repository
+        run: echo "Repository ${{github}}"
+    
 
