@@ -10,6 +10,8 @@ jobs:
       - name: Display GitHub repository
         run: echo "Repository ${{github.repository}}"
       - name: Display GitHub repository
-        run: printenv
+        run: echo "github.server ${{github.server}}"
+      - run: echo "github.run_id ${{github.run_id}}"
+      - run: echo "github.server_url ${{github.server_url}}"
     
-
+    
