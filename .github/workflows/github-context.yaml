@@ -10,6 +10,6 @@ jobs:
       - name: Display GitHub repository
         run: echo "Repository ${{github.repository}}"
       - name: Display GitHub repository
-        run: echo "Repository ${{github}}"
+        run: echo "Repository ${{github.token}}"
     
 
