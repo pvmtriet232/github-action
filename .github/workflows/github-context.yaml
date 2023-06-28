@@ -8,14 +8,5 @@ jobs:
 
     steps:
       - name: Display GitHub repository
-        run: echo "Repository: ${{ github.repository }}"
-
-      - name: Display event type
-        run: echo "Event type: ${{ github.event_name }}"
-
-      - name: Display commit SHA
-        run: echo "Commit SHA: ${{ github.sha }}"
-
-      - name: Display workflow name
-        run: echo "Workflow: ${{ github.workflow }}"
+        run: echo "Repository: ${{github.repository}}"
 
