@@ -1,0 +1,11 @@
+on: []
+
+jobs:
+  call_compose_action:
+    runs-on: ubuntu-latest
+    steps:
+        - name: configure aws credentialsjk
+          uses: pvmtriet232/configure-aws-credentials@v1
+          with:
+            role-to-assume: arn:aws:iam::123456789100:role/my-github-actions-role
+            aws-region: us-east-2 
