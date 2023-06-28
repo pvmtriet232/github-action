@@ -1,5 +1,5 @@
-on: []
-
+on:
+  push
 jobs:
   call_compose_action:
     runs-on: ubuntu-latest
