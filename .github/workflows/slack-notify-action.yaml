@@ -1,5 +1,4 @@
-on:
-  push
+on: workflow_dispatch
 jobs:
   slack-notify:
     name: Simple notification

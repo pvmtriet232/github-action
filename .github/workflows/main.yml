@@ -1,7 +1,6 @@
 ---
   name: Docss
-  on:
-    push
+  on: workflow_dispatch
   env:
     DISABLE_TELEMETRY: 1
   jobs:
